@@ -10,14 +10,14 @@ import java.util.Objects;
 /**
  * @author Juan Montaño
  */
+
 @Entity
 public class Categoria extends ModelBase<CategoriaDto> {
 
     private String descripcion;
 
-
     @Basic
-    @Column(name = "Descripcion", nullable = false, length = 50)
+    @Column(name = "descripcion", nullable = false, length = 50)
     public String getDescripcion() {
         return descripcion;
     }
@@ -39,5 +39,12 @@ public class Categoria extends ModelBase<CategoriaDto> {
     public int hashCode() {
 
         return Objects.hash(descripcion);
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder builder = new StringBuilder();
+        builder.append("Categoria [description=").append(descripcion).append("]");
+        return builder.toString();
     }
 }

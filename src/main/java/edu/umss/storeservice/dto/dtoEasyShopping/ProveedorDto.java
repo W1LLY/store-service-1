@@ -3,7 +3,7 @@ package edu.umss.storeservice.dto.dtoEasyShopping;
 import edu.umss.storeservice.model.modelEasyShopping.Proveedor;
 
 /**
- * @author Willy Kelvis
+ * @author Juan Montaño
  */
 public class ProveedorDto extends DtoBase<Proveedor> {
     private String nit;

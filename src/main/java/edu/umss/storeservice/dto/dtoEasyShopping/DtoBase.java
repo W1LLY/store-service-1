@@ -1,24 +1,23 @@
 package edu.umss.storeservice.dto.dtoEasyShopping;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import edu.umss.storeservice.model.modelEasyShopping.ModelBase;
 import org.modelmapper.ModelMapper;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 import java.util.stream.Collectors;
 
+;
+
 /**
- * @author Willy Sanchez
+ * @author Juan Montaño
  */
 @SuppressWarnings("rawtypes")
 public class DtoBase<E extends ModelBase> {
 
     private Long id;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
-    private Date createdAt;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
-    private Date updatedAt;
-    private long version;
 
     protected void beforeConversion(E element, ModelMapper mapper) {
         // Do nothing
@@ -63,27 +62,4 @@ public class DtoBase<E extends ModelBase> {
         this.id = id;
     }
 
-    public Date getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(Date createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public Date getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt(Date updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
-    public long getVersion() {
-        return version;
-    }
-
-    public void setVersion(long version) {
-        this.version = version;
-    }
 }

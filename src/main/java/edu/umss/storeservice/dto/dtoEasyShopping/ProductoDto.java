@@ -3,7 +3,7 @@ package edu.umss.storeservice.dto.dtoEasyShopping;
 import edu.umss.storeservice.model.modelEasyShopping.Producto;
 
 /**
- * @author Willy Sanchez
+ * @author Juan Montaño
  */
 public class ProductoDto extends DtoBase<Producto> {
     private String nombre;

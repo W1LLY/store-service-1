@@ -3,7 +3,7 @@ package edu.umss.storeservice.dto.dtoEasyShopping;
 import edu.umss.storeservice.model.modelEasyShopping.Categoria;
 
 /**
- * @author Willy Sanchez
+ * @author Juan Montaño
  */
 public class CategoriaDto extends DtoBase<Categoria> {
     private String descripcion;

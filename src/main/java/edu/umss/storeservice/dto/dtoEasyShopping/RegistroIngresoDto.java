@@ -5,7 +5,7 @@ import edu.umss.storeservice.model.modelEasyShopping.RegistroIngreso;
 import java.sql.Timestamp;
 
 /**
- * @author Willy Sanchez
+ * @author Juan Montaño
  */
 public class RegistroIngresoDto extends DtoBase<RegistroIngreso> {
     private Timestamp fecha;

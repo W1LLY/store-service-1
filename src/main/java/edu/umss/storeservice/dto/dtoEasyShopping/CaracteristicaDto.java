@@ -1,9 +1,10 @@
 package edu.umss.storeservice.dto.dtoEasyShopping;
 
+
 import edu.umss.storeservice.model.modelEasyShopping.Caracteristica;
 
 /**
- * @author Willy Sanchez
+ * @author Juan Montaño
  */
 
 public class CaracteristicaDto extends DtoBase<Caracteristica> {
